@@ -65,7 +65,7 @@ docker-compose up
 ```sh
 cd deploy 
 kubectl create ns products
-kubectl apply -f . products
+kubectl apply -f . -n products 
 ```
 
 
