@@ -27,7 +27,7 @@ spec:
               value: redis
             - name: REDIS_PORT
               value: "6379"
-          image: "radhouenassakra/products-store:0.8"
+          image: "radhouenassakra/products-store:1.1"
           name: server
           ports:
             - containerPort: 5000

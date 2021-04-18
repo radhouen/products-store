@@ -102,7 +102,8 @@ kubectl apply -f . -n products
 
 ![plot](./demo/get-products-filter.png)
 
-
+- Calculate the Number of reauest comming to the server
+![plot](./demo/stats.png)
 ## Improvement(TO Do ):
 
 - we can add PV and PVC or storage class to Mongo and Redis for persistent data in case the mongo or redis pods crash.
