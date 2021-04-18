@@ -70,7 +70,9 @@ kubectl apply -f . -n products
 
 ### Demo:
 
-![plot](./demo/swagger.png)
+#### Application Architecture:
+
+![plot](./demo/products.png)
 
 
 ## License
