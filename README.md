@@ -92,5 +92,15 @@ kubectl apply -f . -n products
 
 ![plot](./demo/swagger.png)
 
+
+- Add new product :
+
+![plot](./demo/create-product.png)
+
+
+- Display Products using pagination and filter :
+
+![plot](./demo/get-products-filter.png)
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
