@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    service: server
+  name: server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: server
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        service: server
+    spec:
+      containers:
+        - env:
+            - name: MONGO_DB_NAME
+              value: library
+            - name: MONGO_HOST
+              value: mongo
+            - name: MONGO_PORT
+              value: "27017"
+            - name: REDIS_HOST
+              value: redis
+            - name: REDIS_PORT
+              value: "6379"
+          image: "radhouenassakra/products-store:0.8"
+          name: server
+          ports:
+            - containerPort: 5000
+          resources: {}
+      restartPolicy: Always
+status: {}
