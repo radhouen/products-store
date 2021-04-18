@@ -68,6 +68,9 @@ kubectl create ns products
 kubectl apply -f . -n products 
 ```
 
+### Demo:
+
+![plot](./demo/swagger.png)
 
 
 ## License
