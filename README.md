@@ -102,5 +102,18 @@ kubectl apply -f . -n products
 
 ![plot](./demo/get-products-filter.png)
 
+
+## Improvement(TO Do ):
+
+- we can add PV and PVC or storage class to Mongo and Redis for persistent data in case the mongo or redis pods crash.
+
+- we can use helm chart to make the installation more easy by:
+  - creating Helm charts for the server.
+  - Download bitnami helm chart for redis and mongo make some custom and install it .
+
+- Instead using kubernetes Ingress we can use a service mesh like Istio.
+
+
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
