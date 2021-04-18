@@ -75,5 +75,22 @@ kubectl apply -f . -n products
 ![plot](./demo/products.png)
 
 
+- Enable ingress for minikube:
+
+![plot](./demo/enable-ingress-minikube.png)
+
+- Get minikube ip address:
+
+![plot](./demo/get-minikube-ip.png)
+
+
+- Get the List of products :
+
+![plot](./demo/get-products-list.png)
+
+- Display The swagger Documentation :
+
+![plot](./demo/swagger.png)
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
