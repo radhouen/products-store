@@ -114,7 +114,10 @@ kubectl apply -f . -n products
 
 - Instead using kubernetes Ingress we can use a service mesh like Istio.
 
+---
 
+### Useful links:
+[fluxcd-demo](https://betterprogramming.pub/how-to-continuously-deliver-kubernetes-applications-with-flux-cd-502e4fb8ccfe)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
