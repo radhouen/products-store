@@ -4,6 +4,10 @@ metadata:
   labels:
     service: mongo
   name: mongo
+  namespace: products-store
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.mongo: semver:~4.0.24 # fluxcd.io/tag.<container-name>: <filter-type>:<filter-value>
 spec:
   replicas: 1
   selector:
@@ -16,7 +20,7 @@ spec:
         service: mongo
     spec:
       containers:
-        - image: mongo:latest
+        - image: mongo:4.0.24
           name: mongo
           ports:
             - containerPort: 27017

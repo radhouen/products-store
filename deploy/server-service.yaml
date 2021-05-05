@@ -4,6 +4,7 @@ metadata:
   labels:
     service: server
   name: server
+  namespace: products-store
 spec:
   ports:
     - name: "5000"

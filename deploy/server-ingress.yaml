@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: example-ingress
+  namespace: products-store
   annotations:
     ingress.kubernetes.io/rewrite-target: /
 spec:

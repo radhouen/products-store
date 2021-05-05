@@ -4,6 +4,11 @@ metadata:
   labels:
     service: redis
   name: redis
+  namespace: products
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.redis: semver:~6.2.3 # fluxcd.io/tag.<container-name>: <filter-type>:<filter-value>
+
 spec:
   replicas: 1
   selector:
@@ -16,7 +21,7 @@ spec:
         service: redis
     spec:
       containers:
-        - image: redis:latest
+        - image: redis:6.2.3
           name: redis
           resources: {}
       restartPolicy: Always

@@ -4,6 +4,10 @@ metadata:
   labels:
     service: server
   name: server
+  namespace: products-store
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.server: semver:~1.1 # fluxcd.io/tag.<container-name>: <filter-type>:<filter-value>
 spec:
   replicas: 1
   selector:
