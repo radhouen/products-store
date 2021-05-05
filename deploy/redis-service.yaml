@@ -4,7 +4,7 @@ metadata:
   labels:
     service: mongo
   name: redis
-  namespace: products
+  namespace: products-store
 spec:
   ports:
     - name: "redis-port"
