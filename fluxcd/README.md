@@ -114,3 +114,23 @@ $ fluxctl install \
 --git-path=deploy \
 --namespace=flux | kubectl apply -f -
 ```
+
+- Apply Fluxctl for my deploy folder :
+
+
+![plot](./screens/demo/myapp.png)
+
+
+- Check the flux namespace components:
+
+![plot](./screens/demo/get-all-flux.png)
+
+- We use flux that use the pull GitOps request , when I pushed a new file to create the namespace products-store , fluxcd check the repos periodcally and when detect a change he will apply the desired state , in our case he will create a new namespace after the commit this namespace called products-store.
+
+
+![plot](./screens/demo/ns-created.png)
+
+- After make any chnage on the files inside the deploy folder that have the anotaion automated true will be synchronized automatically :
+
+
+![plot](./screens/demo/new-service-deployed.png)
