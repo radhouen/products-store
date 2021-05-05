@@ -134,3 +134,41 @@ $ fluxctl install \
 
 
 ![plot](./screens/demo/new-service-deployed.png)
+
+
+
+### Monitoring:
+
+#### Create a namespace called monitoring
+
+* First of all pull the helm chart for prometheus and grafana
+* Install it on a namespace called monitoring .
+
+![plot](./screens/monitoring/monitoring.png)
+
+#### Check the po/svc created on the namespace monitoring
+
+
+![plot](./screens/monitoring/monitoring1.png)
+
+#### Update the svc for prometheus from clusterIP to nodePort
+
+
+![plot](./screens/monitoring/monitoring3.png)
+
+#### Check prometheus
+
+
+![plot](./screens/monitoring/monitoring2.png)
+
+
+#### Make the same thing for grafana 
+- change svc from clusterIp to nodePort
+
+
+![plot](./screens/monitoring/monitoring4.png)
+
+#### Open Grafana dashboard
+
+- Import the cluster json (fluxcd/kubernetes-cluster-prometheus_rev1.json) .
+![plot](./screens/monitoring/monitoring5.png)
